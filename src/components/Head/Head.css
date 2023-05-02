@@ -1,0 +1,17 @@
+.header{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-profile{
+    border-radius: 50% ;
+    height: 50px;
+}
+.profile-sec{
+    display: flex;
+}
+.profile-sec p {
+    margin-right: 20px;
+}

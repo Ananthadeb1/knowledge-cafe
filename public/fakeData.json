@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "content_title": "How to get your first job as a self-taught programmer",
+        "content_banner": "https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg?w=996&t=st=1683043937~exp=1683044537~hmac=01441f8117aa24120cef33b830c49178b74f6301868b45580e9f27504ef04041",
+        "author_name": "Md. Rakib Hasan",
+        "author_profile": "https://img.freepik.com/free-photo/portrait-handsome-bearded-man-outside_23-2150266915.jpg?w=360&t=st=1683043835~exp=1683044435~hmac=610d185ec8c6c74c8dc8adfe5605b70e15ff97debeeb93bf32868b998a4fedcb",
+        "course_type": [
+            "#programming, #beginners"
+        ]
+    },
+    {
+        "id": "2",
+        "content_title": "How to get your first job as a self-taught programmer",
+        "content_banner": "https://img.freepik.com/free-photo/person-working-html-computer_23-2150038840.jpg?w=996&t=st=1683043995~exp=1683044595~hmac=da253c111008848f2dee5009257fc470ec3dab8690018f563ce934dd400c4a38",
+        "author_name": "Fahim Muntasir",
+        "author_profile": "https://img.freepik.com/free-photo/portrait-handsome-serious-man_23-2149022626.jpg?w=996&t=st=1683043791~exp=1683044391~hmac=696b5b0f5dd9fdf745c236e238cd860308eda1bb35fc963ddf5ef7a56f9dfaf5",
+        "course_type": [
+            "#programming, #beginners"
+        ]
+    },
+    {
+        "id": "3",
+        "content_title": "How to become a cyber security expert",
+        "content_banner": "",
+        "author_name": "Md. Kamal Uddin",
+        "author_profile": "https://img.freepik.com/free-photo/portrait-bearded-man-holding-his-arms-crossed_23-2148737964.jpg?w=996&t=st=1683043871~exp=1683044471~hmac=6596909b830cdfceeccf679f8176fc7bc351cc65b39bd4c645b8d6fd426dde14",
+        "course_type": [
+            "#programming, #beginners"
+        ]
+    },
+    {
+        "id": "4",
+        "content_title": "How to became a web developer ",
+        "content_banner": "https://img.freepik.com/free-photo/programming-background-collage_23-2149901777.jpg?w=996&t=st=1683044312~exp=1683044912~hmac=82559c9e89f57a385d44e5187025b94fd1fb92d8020e5986457c8b8da414327f",
+        "author_name": "Jhanku vai",
+        "author_profile": "https://yt3.googleusercontent.com/ytc/AGIKgqMv9vhKV86g1z8pap7UnbbbZfB2KdyaevXPWNk_=s900-c-k-c0x00ffffff-no-rj",
+        "course_type": [
+            "#programming, #beginners"
+        ]
+    }
+]
