@@ -7,7 +7,8 @@
         "author_profile": "https://img.freepik.com/free-photo/portrait-handsome-bearded-man-outside_23-2150266915.jpg?w=360&t=st=1683043835~exp=1683044435~hmac=610d185ec8c6c74c8dc8adfe5605b70e15ff97debeeb93bf32868b998a4fedcb",
         "course_type": [
             "#programming, #beginners"
-        ]
+        ],
+        "time": "04"
     },
     {
         "id": "2",
@@ -17,7 +18,8 @@
         "author_profile": "https://img.freepik.com/free-photo/portrait-handsome-serious-man_23-2149022626.jpg?w=996&t=st=1683043791~exp=1683044391~hmac=696b5b0f5dd9fdf745c236e238cd860308eda1bb35fc963ddf5ef7a56f9dfaf5",
         "course_type": [
             "#programming, #beginners"
-        ]
+        ],
+        "time": "05"
     },
     {
         "id": "3",
@@ -27,7 +29,8 @@
         "author_profile": "https://img.freepik.com/free-photo/portrait-bearded-man-holding-his-arms-crossed_23-2148737964.jpg?w=996&t=st=1683043871~exp=1683044471~hmac=6596909b830cdfceeccf679f8176fc7bc351cc65b39bd4c645b8d6fd426dde14",
         "course_type": [
             "#programming, #beginners"
-        ]
+        ],
+        "time": "15"
     },
     {
         "id": "4",
@@ -37,6 +40,7 @@
         "author_profile": "https://yt3.googleusercontent.com/ytc/AGIKgqMv9vhKV86g1z8pap7UnbbbZfB2KdyaevXPWNk_=s900-c-k-c0x00ffffff-no-rj",
         "course_type": [
             "#programming, #beginners"
-        ]
+        ],
+        "time": "09"
     }
 ]

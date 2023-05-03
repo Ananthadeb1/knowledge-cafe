@@ -1,42 +1,44 @@
 .course {
-    width: 845px;
-    height: 820px;
-    border: 1px solid gray;
-    border-radius: 8px;
-    position: relative;
+  width: 845px;
+  height: 820px;
+  border-bottom: 1px solid gray;
+  position: relative;
 }
 
-.course img {
-    width: 845px;
-    height: 450px;
-    border-radius: 8px;
+.banner-img {
+  width: 845px;
+  height: 450px;
+  border-radius: 8px;
+  margin-bottom: 35px;
 }
 
 .course-name {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
-    letter-spacing: 0.0015em;
-    color: #0E161A;
+  font-family: Exo 2;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.course-info{
-    margin-left: 14px;
+.course-info {
+  margin-left: 14px;
 }
-/* .course-info p{
-    margin-top: 5px;
-} */
-/* .btn-cart{
-    width: 100%;
-    background: #FFE0B3;
-    border: 1px solid #95A0A7;
-    border-radius: 0px 0px 8px 8px;
-    position: absolute;
-    bottom: 0;
+.auth-sec{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    
 }
-.btn-cart:hover{
+.author-info{
+    display: flex;
+    align-items: center;
+}
+.auth-img{
+    border-radius: 50%;
+    margin-right:25px ;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-read :hover{
     background-color: orange;
-} */
+} 
