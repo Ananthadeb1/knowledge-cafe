@@ -12,10 +12,8 @@ const Course = (props) => {
         course_type,
         time,
     } = props.course;
-    const handleAddToCart = props.handleAddToCart;
-    function bookM(){
-        console.log("Book");
-    } 
+    const handleAddItems = props.handleAddItems;
+    const handleAddTime = props.handleAddTime;
 
     return (
         <div className="course">
@@ -26,8 +24,8 @@ const Course = (props) => {
                     <h3>{author_name}</h3>
                 </div>
                 <div className="time">
-                    <p style={{cursor: "pointer"}} onClick={bookM}>{time} min read .
-                    <FontAwesomeIcon icon={faBookmark} />
+                    <p>{time} min read .
+                    <FontAwesomeIcon style={{cursor: "pointer"}}  onClick={() => handleAddItems(props.course)} icon={faBookmark} />
                     </p>
                 </div>
             </div>
@@ -35,9 +33,9 @@ const Course = (props) => {
             <div className="course-info">
                 <p>{course_type}</p>
             </div>
-
+            
             <p style={{cursor: "pointer"}}
-                onClick={() => handleAddToCart(props.course)}>
+                onClick={() => handleAddTime(props.course)}>
                 Mark as read
             </p>
         </div>

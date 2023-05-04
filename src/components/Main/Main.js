@@ -1,55 +1,46 @@
 import React, { useEffect, useState } from "react";
 import "./Main.css";
 import Course from "../Course/Course";
+import Bookmark from "../Bookmark/Bookmark";
+let count =0;
+let totalTime = 0;
+let title = "";
 
 const Main = () => {
   const [courses, setCourses] = useState([]);
-  const [cart, setCart] = useState([]);
+  const [bookmark, setBookmark] = useState([]);
+  // const [time, setTime] = useState(0)ss
 
   useEffect(() => {
     fetch("fakeData.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
+  let newCart = [];
+ 
+  useEffect(() => {
+    setBookmark(newCart);
+  }, []);
+  // useEffect(() => {
+  //   setTime(totalTime);
+  // }, []);
 
-//   useEffect(() => {
-//     const storedCart = getShoppingCart();
-//     const savedCart = [];
-//     // step 1: get id of the addedcourse
-//     for (const id in storedCart) {
-//       // step 2: get course from courses state by using id
-//       const addedcourse = courses.find((course) => course.id === id);
-//       if (addedcourse) {
-//         // step 3: add quantity
-//         const quantity = storedCart[id];
-//         addedcourse.quantity = quantity;
-//         // step 4: add the added course to the saved cart
-//         savedCart.push(addedcourse);
-//       }
-//       // console.log('added course', addedcourse)
-//     }
-//     // step 5: set the cart
-//     setCart(savedCart);
-//   }, [courses]);
+  const handleAddTime = (course) =>{
 
-  const handleAddToCart = (course) => {
-    // cart.push(course); '
-    let newCart = [];
-    // const newCart = [...cart, course];
-    // if course doesn't exist in the cart, then set quantity = 1
-    // if exist update quantity by 1
-    const exists = cart.find((pd) => pd.id === course.id);
-    if (!exists) {
-      course.quantity = 1;
-      newCart = [...cart, course];
-    } else {
-      exists.quantity = exists.quantity + 1;
-      const remaining = cart.filter((pd) => pd.id !== course.id);
-      newCart = [...remaining, exists];
-    }
+    let newTime =0; 
+    newTime =parseInt(course.time)
+     totalTime = newTime + totalTime;
+     const newCart = [...bookmark]
+      setBookmark(newCart)
+  }
 
-    // setCart(newCart);
-    // addToDb(course.id);
+  const handleAddItems = (course) => {
+    count++;
+    const newCart = [...bookmark, course];
+    console.log(title)
+    title =  title.concat(course.content_title + "\n");
+    console.log((course.content_title))
+    setBookmark(newCart);
   };
   return (
     <div className="main-container">
@@ -58,15 +49,25 @@ const Main = () => {
           <Course
             key={course.id}
             course={course}
-            handleAddToCart={handleAddToCart}
+            handleAddItems={handleAddItems}
+            handleAddTime={handleAddTime}
           ></Course>
         ))}
       </div>
-      <div className="cart-container">
-        {/* <Cart cart={cart}></Cart> */}
-      </div>
+
+      <div className="book-container">
+                <Bookmark bookmark={bookmark}
+                ></Bookmark>
+            </div>
+      <div >
+                
+            </div>
+
     </div>
   );
 };
 
 export default Main;
+export {count}
+export {totalTime}
+export {title}
