@@ -24,11 +24,11 @@ const Main = () => {
   };
 
   const handleAddItems = (course) => {
-    count++;
+    
     let exist=false;
     title.forEach(title => {
       if(title === course.content_title){
-        console.log("added")
+        
         toast('You Have Already Bookmarked This Blog!',
         {
           icon: '❌',
@@ -45,6 +45,7 @@ const Main = () => {
     if(exist===false){
       const newTitle =[...title,course.content_title]
       setTitle(newTitle);
+      count++;
     }
     
   };
