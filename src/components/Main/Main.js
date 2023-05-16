@@ -4,13 +4,17 @@ import Course from "../Course/Course";
 import Bookmark from "../Bookmark/Bookmark";
 import toast from 'react-hot-toast';
 
-let count = 0;
+
 let totalTime = 0;
+let countNum = 0;
 
 const Main = () => {
   const [courses, setCourses] = useState([]);
   const [title, setTitle] = useState([]);
+  const [time, setTime]=useState(0);
+  const [count, setCount]=useState(0);
 
+  
   useEffect(() => {
     fetch("fakeData.json")
       .then((res) => res.json())
@@ -19,8 +23,10 @@ const Main = () => {
 
   const handleAddTime = (course) => {
     let newTime = 0;
+    
     newTime = parseInt(course.time);
-    totalTime = newTime + totalTime;
+     totalTime = totalTime + newTime;
+    setTime(totalTime);
   };
 
   const handleAddItems = (course) => {
@@ -45,7 +51,8 @@ const Main = () => {
     if(exist===false){
       const newTitle =[...title,course.content_title]
       setTitle(newTitle);
-      count++;
+      countNum = countNum +1;
+      setCount(countNum)
     }
     
   };
@@ -64,7 +71,9 @@ const Main = () => {
 
       <div className="book-container">
         <Bookmark
-         title={title}>
+         title={title}
+         time ={time}
+         count={count}>
          </Bookmark>
       </div>
       <div></div>
@@ -73,5 +82,3 @@ const Main = () => {
 };
 
 export default Main;
-export { count };
-export { totalTime };

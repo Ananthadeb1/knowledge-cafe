@@ -4,7 +4,7 @@ import "./Head.css"
 const Head = () => {
     return (
         <nav className='header'>
-            <h1>Gayan Baba</h1>
+            <h1>Geyan Baba</h1>
             <div className='profile-sec'>
                 <a href='/contact'>Contact us</a>
                 <a href='/review'>Review</a>
